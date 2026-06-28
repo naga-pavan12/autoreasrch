@@ -1,0 +1,39 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "PainPointExtraction",
+  "type": "object",
+  "properties": {
+    "pain_points": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "title": { "type": "string" },
+          "description": { "type": "string" },
+          "affected_user_type": { "type": "string" },
+          "evidence_quotes": {
+            "type": "array",
+            "items": { "type": "string" }
+          },
+          "severity": {
+            "type": "string",
+            "enum": ["low", "medium", "high"]
+          },
+          "confidence": {
+            "type": "string",
+            "enum": ["low", "medium", "high"]
+          }
+        },
+        "required": [
+          "title",
+          "description",
+          "affected_user_type",
+          "evidence_quotes",
+          "severity",
+          "confidence"
+        ]
+      }
+    }
+  },
+  "required": ["pain_points"]
+}

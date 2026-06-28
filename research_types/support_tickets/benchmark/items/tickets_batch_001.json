@@ -1,0 +1,5 @@
+{
+  "id": "tickets_batch_001",
+  "source_type": "support_tickets",
+  "input_text": "Ticket #102: User reports they cannot change their password. Keeps getting 'Unknown Error'.\nTicket #105: Password reset link expired instantly.\nTicket #109: I try to reset my password but no email is arriving to my gmail account.\nTicket #112: The password reset flow is totally broken on mobile. The button is hidden beneath the footer."
+}

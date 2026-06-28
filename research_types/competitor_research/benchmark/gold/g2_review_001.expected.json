@@ -1,0 +1,45 @@
+{
+  "problems": [
+    {
+      "title": "Automation setup is too complex for mid-market teams",
+      "description": "Support teams struggle to configure routing and workflow automation without external help, which slows time-to-value and increases operational burden.",
+      "affected_user_type": "Support Operations Manager",
+      "evidence_quotes": [
+        "setting up automation has been much harder than expected",
+        "We needed outside help to make routing and workflow rules usable"
+      ],
+      "problem_level": "root_cause",
+      "severity": "high",
+      "frequency_guess": "medium",
+      "strategic_relevance": "high",
+      "strategic_relevance_reason": "This aligns strongly with our strategy of fast onboarding and lower setup complexity for mid-market support teams."
+    },
+    {
+      "title": "Support managers do not fully trust automation decisions",
+      "description": "Users have low confidence in automated prioritization because the system is hard to understand and explain.",
+      "affected_user_type": "Support Manager",
+      "evidence_quotes": [
+        "our support managers do not always trust the automations",
+        "it is difficult to understand why tickets get prioritized a certain way"
+      ],
+      "problem_level": "root_cause",
+      "severity": "high",
+      "frequency_guess": "medium",
+      "strategic_relevance": "high",
+      "strategic_relevance_reason": "Trust in AI-assisted workflows is a core strategic area for us."
+    },
+    {
+      "title": "Agents lose time due to fragmented context",
+      "description": "Agents need to check multiple places before replying, which slows issue resolution.",
+      "affected_user_type": "Support Agent",
+      "evidence_quotes": [
+        "Agents also waste time jumping between customer history, internal notes, and billing context before replying"
+      ],
+      "problem_level": "symptom",
+      "severity": "high",
+      "frequency_guess": "medium",
+      "strategic_relevance": "high",
+      "strategic_relevance_reason": "This directly affects time-to-resolution and agent productivity."
+    }
+  ]
+}

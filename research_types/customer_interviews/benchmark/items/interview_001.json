@@ -1,0 +1,11 @@
+{
+  "id": "interview_001",
+  "source_type": "customer_interview",
+  "title": "Discussion with Mid-market Support Leader",
+  "metadata": {
+    "persona": "CX Director",
+    "segment": "Financial Services SaaS",
+    "agents_count": 50
+  },
+  "input_text": "Interviewer: What's the biggest headache in your team right now?\nUser: Honestly, it's just the sheer volume of repetitive stuff. We get the same password reset and billing questions hundreds of times a day. We have macros, but agents still have to manually verify the user identity every single time which takes 30-40 seconds per ticket. It adds up. Also, because our current AI tool is a 'black box', I can't explain to my boss why it suggested a refund for a high-value account. I need more control and visibility."
+}

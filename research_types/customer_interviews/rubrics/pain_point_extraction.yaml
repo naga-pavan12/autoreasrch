@@ -1,0 +1,17 @@
+name: customer_interview_pain_point_extraction
+
+dimensions:
+  - name: schema_validity
+    weight: 0.2
+  - name: evidence_grounding
+    weight: 0.25
+  - name: specificity
+    weight: 0.2
+  - name: pain_quality
+    weight: 0.2
+  - name: deduplication
+    weight: 0.1
+  - name: hallucination_penalty
+    weight: 0.05
+
+pass_threshold: 3.5

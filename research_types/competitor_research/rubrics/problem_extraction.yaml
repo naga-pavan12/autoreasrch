@@ -1,0 +1,40 @@
+name: competitor_problem_extraction
+description: Scores quality of extracted problems from competitor research inputs.
+
+dimensions:
+  - name: schema_validity
+    weight: 0.20
+    description: Output follows required schema and is parseable.
+
+  - name: specificity
+    weight: 0.20
+    description: Problems are concrete, not vague or generic.
+
+  - name: evidence_grounding
+    weight: 0.20
+    description: Each problem includes direct supporting quotes from the input.
+
+  - name: problem_quality
+    weight: 0.15
+    description: Captures underlying problems rather than superficial feature gaps.
+
+  - name: deduplication
+    weight: 0.10
+    description: Avoids repeating the same issue in slightly different words.
+
+  - name: strategy_alignment
+    weight: 0.10
+    description: Connects findings to company goals in a plausible way.
+
+  - name: hallucination_penalty
+    weight: 0.05
+    description: Penalize unsupported claims or invented evidence.
+
+scoring_guide:
+  5: excellent
+  4: strong
+  3: adequate
+  2: weak
+  1: poor
+
+pass_threshold: 3.5

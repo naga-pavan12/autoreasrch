@@ -1,0 +1,6 @@
+benchmark_name: competitor_research_sample
+description: Sample competitor research benchmark for problem discovery
+items:
+  - id: g2_review_001
+    file: items/g2_review_001.json
+    gold_file: gold/g2_review_001.expected.json

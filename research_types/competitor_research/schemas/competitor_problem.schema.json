@@ -1,0 +1,51 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "CompetitorProblemExtraction",
+  "type": "object",
+  "properties": {
+    "problems": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "title": { "type": "string" },
+          "description": { "type": "string" },
+          "affected_user_type": { "type": "string" },
+          "evidence_quotes": {
+            "type": "array",
+            "items": { "type": "string" }
+          },
+          "problem_level": {
+            "type": "string",
+            "enum": ["symptom", "root_cause", "unclear"]
+          },
+          "severity": {
+            "type": "string",
+            "enum": ["low", "medium", "high"]
+          },
+          "frequency_guess": {
+            "type": "string",
+            "enum": ["low", "medium", "high"]
+          },
+          "strategic_relevance": {
+            "type": "string",
+            "enum": ["low", "medium", "high"]
+          },
+          "strategic_relevance_reason": { "type": "string" }
+        },
+        "required": [
+          "title",
+          "description",
+          "affected_user_type",
+          "evidence_quotes",
+          "problem_level",
+          "severity",
+          "frequency_guess",
+          "strategic_relevance",
+          "strategic_relevance_reason"
+        ]
+      }
+    }
+  },
+  "required": ["problems"]
+}

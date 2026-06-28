@@ -1,0 +1,22 @@
+research_type: support_tickets
+default_task: extract_recurring_issues
+
+provider:
+  type: openai
+  model: gpt-4o-mini
+  temperature: 0.2
+
+paths:
+  benchmark_dir: research_types/support_tickets/benchmark
+  prompts_dir: research_types/support_tickets/prompts
+  rubrics_dir: research_types/support_tickets/rubrics
+  schemas_dir: research_types/support_tickets/schemas
+  outputs_dir: research_types/support_tickets/outputs
+  reports_dir: research_types/support_tickets/reports
+  company_context_dir: shared/company_context
+
+tasks:
+  extract_recurring_issues:
+    prompt_file: extract_recurring_issues.md
+    rubric_file: ticket_extraction.yaml
+    schema_file: ticket_problems.schema.json

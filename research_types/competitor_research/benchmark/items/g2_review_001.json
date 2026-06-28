@@ -1,0 +1,13 @@
+{
+  "id": "g2_review_001",
+  "source_type": "competitor_review",
+  "company": "Zendesk",
+  "source_name": "G2",
+  "title": "Powerful but too hard to operationalize",
+  "metadata": {
+    "persona": "Support Operations Manager",
+    "segment": "Mid-market B2B SaaS",
+    "competitor": "Zendesk"
+  },
+  "input_text": "Zendesk is powerful, but setting up automation has been much harder than expected. We needed outside help to make routing and workflow rules usable. The product can do a lot, but our support managers do not always trust the automations because it is difficult to understand why tickets get prioritized a certain way. Agents also waste time jumping between customer history, internal notes, and billing context before replying. Reporting is decent, but getting to a reliable workflow took too long for our team."
+}

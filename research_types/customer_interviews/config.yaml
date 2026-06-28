@@ -1,0 +1,22 @@
+research_type: customer_interviews
+default_task: extract_pain_points
+
+provider:
+  type: openai
+  model: gpt-4o-mini
+  temperature: 0.2
+
+paths:
+  benchmark_dir: research_types/customer_interviews/benchmark
+  prompts_dir: research_types/customer_interviews/prompts
+  rubrics_dir: research_types/customer_interviews/rubrics
+  schemas_dir: research_types/customer_interviews/schemas
+  outputs_dir: research_types/customer_interviews/outputs
+  reports_dir: research_types/customer_interviews/reports
+  company_context_dir: shared/company_context
+
+tasks:
+  extract_pain_points:
+    prompt_file: extract_pain_points.md
+    rubric_file: pain_point_extraction.yaml
+    schema_file: pain_point.schema.json

@@ -1,0 +1,37 @@
+research_type: competitor_research
+default_task: extract_problems
+
+provider:
+  type: openai
+  model: gpt-4o-mini
+  temperature: 0.2
+
+paths:
+  benchmark_dir: research_types/competitor_research/benchmark
+  prompts_dir: research_types/competitor_research/prompts
+  rubrics_dir: research_types/competitor_research/rubrics
+  schemas_dir: research_types/competitor_research/schemas
+  outputs_dir: research_types/competitor_research/outputs
+  reports_dir: research_types/competitor_research/reports
+  company_context_dir: shared/company_context
+
+tasks:
+  extract_problems:
+    prompt_file: extract_problems_from_reviews.md
+    rubric_file: problem_extraction.yaml
+    schema_file: competitor_problem.schema.json
+
+run_defaults:
+  max_items: 10
+  save_raw_output: true
+  save_parsed_output: true
+  save_scores: true
+  generate_report: true
+
+mutation:
+  enabled: true
+  strategies:
+    - tighten_specificity
+    - require_more_evidence
+    - reduce_output_count
+    - add_strategy_alignment_language

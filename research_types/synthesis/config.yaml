@@ -1,0 +1,22 @@
+research_type: synthesis
+default_task: rank_opportunities
+
+provider:
+  type: openai
+  model: gpt-4o-mini
+  temperature: 0.2
+
+paths:
+  benchmark_dir: research_types/synthesis/benchmark
+  prompts_dir: research_types/synthesis/prompts
+  rubrics_dir: research_types/synthesis/rubrics
+  schemas_dir: research_types/synthesis/schemas
+  outputs_dir: research_types/synthesis/outputs
+  reports_dir: research_types/synthesis/reports
+  company_context_dir: shared/company_context
+
+tasks:
+  rank_opportunities:
+    prompt_file: rank_opportunities_against_strategy.md
+    rubric_file: synthesis_ranking.yaml
+    schema_file: opportunity_ranking.schema.json
